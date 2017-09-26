@@ -10,16 +10,16 @@
     vm.emailLogin = emailLogin;
 
     // initialize Account Kit with CSRF protection
-    AccountKit_OnInteractive = () => {
-      AccountKit.init({
-        appId: `${Config.FACEBOOK.APP_ID}`,
-        state: Guid.raw(),
-        version: `${Config.FACEBOOK.ACCOUNT_KIT.VERSION}`,
-        fbAppEventsEnabled: true,
-        debug: true,
-        Redirect: $state.go('login')
-      });
-    };
+    // AccountKit_OnInteractive = () => {
+    AccountKit.init({
+      appId: `${Config.FACEBOOK.APP_ID}`,
+      state: Guid.raw(),
+      version: `${Config.FACEBOOK.ACCOUNT_KIT.VERSION}`,
+      fbAppEventsEnabled: true,
+      debug: true,
+      Redirect: $state.go('login')
+    });
+    // };
 
     // login callback
     function loginCallback(response) {
