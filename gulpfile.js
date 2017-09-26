@@ -17,11 +17,11 @@ const CSSSources = [];
 
 const JSSources = [
   './node_modules/angular/angular.js',
-  './node_modules/angular-animate/angular-animate.min.js',
+  './node_modules/angular-ui-router/release/angular-ui-router.js'
+  /*'./node_modules/angular-animate/angular-animate.min.js',
   './node_modules/angular-aria/angular-aria.js',
-  './node_modules/angular-messages/angular-messages.js',
-  './node_modules/angular-ui-router/release/angular-ui-router.js',
-  './node_modules/angular-material/angular-material.js'
+  './node_modules/angular-messages/angular-messages.js',  
+  './node_modules/angular-material/angular-material.js'*/
 ];
 
 const chatbotJSSources = [
